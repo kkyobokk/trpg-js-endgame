@@ -5,10 +5,12 @@
   "scripts": {
     "start": "electron ."
   },
+  "homepage": ".",
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "react": "^18.2.0"
   },
   "keywords": [],
   "description": "",
