@@ -1,5 +1,7 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
+const { ipcMain } = require('electron');
+const fs = require('fs')
 
 const createWindow = () => {
     const win = new BrowserWindow({
@@ -26,3 +28,7 @@ app.whenReady().then(() => {
 app.on('window-all-closed', () => {
     if (process.platform !== 'darwin') app.quit();
 });
+
+ipcMain.on('Stat', (evt, stat) => { 
+    fs.writeFileSync('./src/src/data/PlayerData.json', JSON.stringify(stat));
+})
