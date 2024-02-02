@@ -51,3 +51,13 @@ body {
   background-color: whitesmoke;
   border-color: aliceblue;
 }
+
+.StatUpBtn {
+  width: 400px;
+  height: 80px;
+  font-size: 40px;
+  border-radius: 60px;
+  background-color: whitesmoke;
+  border-color: aliceblue;
+  float: right;
+}
