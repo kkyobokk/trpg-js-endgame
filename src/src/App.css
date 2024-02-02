@@ -52,7 +52,7 @@ body {
   border-color: aliceblue;
 }
 
-.StatUpBtn {
+.statUpBtn {
   width: 400px;
   height: 80px;
   font-size: 40px;
@@ -60,4 +60,15 @@ body {
   background-color: whitesmoke;
   border-color: aliceblue;
   float: right;
+  margin : 0 auto;
+  margin-right: 100px;
+}
+
+.statTb {
+  display: flex;
+}
+
+.statInfo {
+  margin:auto auto;
+  margin-Left : 100px;
 }

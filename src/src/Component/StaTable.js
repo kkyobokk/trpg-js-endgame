@@ -1,6 +1,44 @@
-export default function StaTable({name,stat}) {
-    const StatName = {"MaxHP":"체력","ATK":"힘","LUK":"행운","MAG":"마력","ADEF":"물리 방어","MDEF":"마법 방어","MaxMANA":"마나"}
+const StatInfo = {
+    MaxHP:{
+        name : "체력",
+        uppoint : 5,
+    },
+    ATK:{
+        name : "힘",
+        uppoint : 1,
+    },
+    LUK:{
+        name : "행운",
+        uppoint : 1,
+    },
+    MAG:{
+        name : "마력",
+        uppoint : 1,
+    },
+    ADEF:{
+        name : "물리 방어",
+        uppoint : 1,
+    },
+    MDEF:{
+        name : "마법 방어",
+        uppoint : 1,
+    },
+    MaxMANA:{
+        name : "마나",
+        uppoint : 5,
+    }
+}
+
+function StaTable({name,stat}) {
+
     return <div className="StaTable">
-            <h1 style={{float:"left",paddingRight:"100px"}}>{StatName[name]} : {stat}</h1>
+            <h1 style={{marginLeft : "100px"}}>{StatInfo[name].name} : {stat}</h1>
         </div>
 }
+
+const md = {
+    StaTable : StaTable,
+    StatInfo : StatInfo,
+}
+
+export default md;
