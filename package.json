@@ -10,7 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "path": "^0.12.7",
-    "react": "^18.2.0"
+    "react": "^18.2.0",
+    "react-router-dom": "^6.21.3"
   },
   "keywords": [],
   "description": "",
