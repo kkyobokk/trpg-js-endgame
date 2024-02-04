@@ -29,6 +29,10 @@ app.on('window-all-closed', () => {
     if (process.platform !== 'darwin') app.quit();
 });
 
-ipcMain.on('Stat', (evt, stat) => { 
-    fs.writeFileSync('./src/src/data/PlayerData.json', JSON.stringify(stat));
+ipcMain.on('Stat', (evt, data) => { 
+    fs.writeFileSync('./src/src/data/PlayerData.json', JSON.stringify(data));
+})
+
+ipcMain.on('Equip', (evt, data) => { 
+    fs.writeFileSync('./src/src/data/PlayerData.json', JSON.stringify(data));
 })

@@ -7,12 +7,26 @@ export default function Main() {
     const ClickBtn = useCallback(() => {
         navigate("/stat")
     }, [])
+
+    const ClickMap = useCallback(()=>{
+        navigate("/map")
+    })
+
+    const ClickStore = useCallback(()=>{
+        navigate("/store")
+    })
+
+    const ClickInv = useCallback(()=>{
+        navigate("/inv")
+    })
+
     return (
         <div className="center">
             <h1> Main </h1>
-            <div className="StatBtn">
-                <button onClick={ClickBtn} id="StatBtn">스탯</button>
-            </div>
+            <button onClick={ClickBtn} className="Btn">스탯</button>
+            <button onClick={ClickMap} className="Btn">맵</button>
+            <button onClick={ClickStore} className="Btn">상점</button>
+            <button onClick={ClickInv} className="Btn">가방</button>
         </div>
     )
 }

@@ -1,1 +1,1 @@
-{"Stat":{"MaxHP":50,"CurHP":50,"ATK":5,"LUK":5,"MAG":5,"ADEF":5,"MDEF":5,"MaxMANA":20,"CurMANA":20},"Lv":{"LV":0,"MaxEXP":20,"CurEXP":0,"SP":0},"Inv":{"Gold":0,"EquipInv":{},"Inv":{}},"Skillset":{"EquipSkill":{},"LearnedSkill":{}}}
+{"Stat":{"MaxHP":50,"CurHP":50,"ATK":5,"LUK":5,"MAG":5,"ADEF":5,"MDEF":5,"MaxMANA":20,"CurMANA":20},"Lv":{"LV":0,"MaxEXP":20,"CurEXP":0,"SP":0},"Inv":{"Gold":0,"EquipInv":{"다람쥐":1,"청설모":1},"Inv":{"강아지":1,"고양이":1}},"Skillset":{"EquipSkill":{},"LearnedSkill":{}}}
