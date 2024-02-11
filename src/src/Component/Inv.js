@@ -27,16 +27,17 @@ export default function Inv() {
     }
 
     return <div className="center">
+        <div style={{width:"100%",height:"80%",overflow:"auto"}}>
             <h1>골드 : {GoldData}G</h1>
-            <table class="table-fill">
+            <table className="table-fill">
                 <thead>
                     <tr>
-                        <th class="text-center">이름</th>
-                        <th class="text-center">수량</th>
+                        <th className="text-center">이름</th>
+                        <th className="text-center">수량</th>
                         <th></th>
                     </tr>
                 </thead>
-                <tbody class="table-hover">
+                <tbody className="table-hover">
                     {Object.keys(InvData)
                         .map(e => <tr>
                                 <td>{e}</td>
@@ -51,5 +52,6 @@ export default function Inv() {
                             </tr>)}
                 </tbody>
             </table>
+            </div>
         </div>
 }

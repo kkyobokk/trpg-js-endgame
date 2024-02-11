@@ -38,8 +38,8 @@ export default function Stat() {
             .map(e => 
                 <div className="statTb" key={e}>
                     <StaTable name={e} stat={StatData[e]}/>
-                    <button onClick={() => Statup(e)} className='Btn' ref={enter} style={{width:"200px",fontSize:"30px"}}>스탯 업</button>
-                    <button onClick={() => Statup(e)} className='Btn' ref={enter} style={{width:"200px",fontSize:"30px"}}>스탯 업</button>
+                    <button onClick={() => Statup(e)} className='Btn' ref={enter} style={{width:"180px",fontSize:"27px"}}>스탯 업</button>
+                    <button onClick={() => Statup(e)} className='Btn' ref={enter} style={{width:"180px",fontSize:"27px"}}>스탯 업</button>
                 </div>
             )
         }
