@@ -79,10 +79,10 @@ body {
 
 .statInfo {
   margin:auto auto;
-  margin-Left : 200px;
+  margin-Left : 0px;
   width: 300px;
+  text-align: left;
 }
-
 /* tabel */
 .table-fill {
   background: white;

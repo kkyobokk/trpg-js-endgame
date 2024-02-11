@@ -31,8 +31,8 @@ const StatInfo = {
 
 function StaTable({name,stat}) {
 
-    return <div className="StaTable">
-            <h1>{StatInfo[name].name} : {stat}</h1>
+    return <div className="statInfo">
+            <h1 style={{marginLeft : "30px"}}>{StatInfo[name].name} : {stat}</h1>
         </div>
 }
 

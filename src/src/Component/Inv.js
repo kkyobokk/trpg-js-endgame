@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import PlayerData from '../data/PlayerData.json'
 
-const InvData = PlayerData.Inv.Inv
-const EquipData = PlayerData.Inv.EquipInv
-const GoldData = PlayerData.Inv.Gold
+// const InvData = PlayerData.Inv.Inv
+// const EquipData = PlayerData.Inv.EquipInv
+// const GoldData = PlayerData.Inv.Gold
+
+const {Inv : InvData, EquipInv : EquipData, Gold : GoldData} = PlayerData.Inv
 
 export default function Inv() {
     const [Amount,setAmount] = useState({...EquipData})
